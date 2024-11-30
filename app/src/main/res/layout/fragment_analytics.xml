@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Status"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart_task_status"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Task Completion (Last 7 Days)"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart_task_completion"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Task Priority Distribution"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart_task_priority"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
